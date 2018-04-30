@@ -24,8 +24,8 @@ module.exports = {
   // social
   //TODO: need to confirm each of these... (and maybe don't want all three?)
   authorSocialLinks: [
-    { name: "github", url: "https://github.com/qqtrend" },
-    { name: "twitter", url: "https://twitter.com/qqtrend" },
-    { name: "facebook", url: "http://facebook.com/qqtrend" }
+    // { name: "github", url: "https://github.com/qqtrend" },
+    // { name: "twitter", url: "https://twitter.com/qqtrend" },
+    // { name: "facebook", url: "http://facebook.com/qqtrend" }
   ]
 };
