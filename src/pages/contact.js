@@ -17,7 +17,7 @@ const Contact = () => {
       <Article>
         <PageHeader title="Contact" />
         <Content>
-          Feel free to contact me by email: <Obfuscate email="greglobinski@gmail.com" /> or use the
+          Feel free to contact us by email: <Obfuscate email="contact@qqtrend.com" /> or use the
           form below.
         </Content>
         <Form />
