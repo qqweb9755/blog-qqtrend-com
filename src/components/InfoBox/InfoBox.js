@@ -38,12 +38,12 @@ const styles = theme => ({
     }
   },
   wrapper: {
-    position: "absolute",
-    top: `${theme.info.sizes.headerHeight}px`,
-    bottom: 0,
-    left: 0,
+    // position: "absolute",
+    // top: `${theme.info.sizes.headerHeight}px`,
+    // bottom: 0,
+    // left: 0,
     width: "100%",
-    padding: "0 40px 0",
+    // padding: "0 40px 0",
     willChange: "opacity, bottom",
     transition: "bottom .5s 0s",
     opacity: 1,
@@ -71,8 +71,7 @@ class InfoBox extends React.Component {
 
     return (
       <aside
-        className={`${classes.infoBox} ${navigatorPosition ? navigatorPosition : ""} 
-        ${navigatorShape ? navigatorShape : ""}`}
+        className={`${classes.infoBox}`}
       >
         {info && (
           <InfoHeader
@@ -82,8 +81,8 @@ class InfoBox extends React.Component {
           />
         )}
         <div className={classes.wrapper}>
-          {info && <InfoText info={info} />}
-          <SocialIcons />
+          {/* {info && <InfoText info={info} />}*/}
+          {/* <SocialIcons /> */}
           {pages && <InfoMenu pages={pages} linkOnClick={this.menulinkOnClick} />}
           {/* <StackIcons /> */}
         </div>

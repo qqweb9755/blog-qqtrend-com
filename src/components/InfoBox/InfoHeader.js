@@ -18,52 +18,53 @@ const styles = theme => ({
     willChange: "left, top",
     float: "left",
     display: "block",
-    position: "relative",
-    margin: "0 12px 0 0",
-    [`@media (min-width: ${theme.mediaQueryTresholds.M}px)`]: {
-      margin: "0 20px 0 0"
-    },
-    [`@media (min-width: ${theme.mediaQueryTresholds.L}px)`]: {
-      position: "absolute",
-      top: "10px",
-      left: "50%",
-      marginLeft: "-30px",
-      transition: "all .5s",
-      transitionTimingFunction: "ease",
-      ".navigator-in-transition-from.navigator-is-opened &": {
-        left: "50%"
-      },
-      ".is-aside.open &": {
-        left: "8%",
-        top: "0"
-      }
-    }
+    // position: "relative",
+    // margin: "0 12px 0 0",
+    // [`@media (min-width: ${theme.mediaQueryTresholds.M}px)`]: {
+    //   margin: "0 20px 0 0"
+    // },
+    // [`@media (min-width: ${theme.mediaQueryTresholds.L}px)`]: {
+    //   position: "absolute",
+    //   top: "10px",
+    //   left: "50%",
+    //   marginLeft: "-30px",
+    //   transition: "all .5s",
+    //   transitionTimingFunction: "ease",
+    //   ".navigator-in-transition-from.navigator-is-opened &": {
+    //     left: "50%"
+    //   },
+    //   ".is-aside.open &": {
+    //     left: "8%",
+    //     top: "0"
+    //   }
+    // }
   },
   avatar: {
-    width: "36px",
-    height: "36px",
-    borderRadius: "65% 75%",
-    border: "1px solid #ddd",
-    transition: "all .3s",
-    transitionTimingFunction: "ease",
-    display: "inline-block",
+    width: "180px",
+    height: "180px",
+    margin: "-1rem 0 0.2rem -1rem",
+    //borderRadius: "65% 75%",
+    //border: "1px solid #ddd",
+    // transition: "all .3s",
+    // transitionTimingFunction: "ease",
+    // display: "inline-block",
     overflow: "hidden",
     "& img": {
       maxWidth: "100%"
     },
-    [`@media (min-width: ${theme.mediaQueryTresholds.M}px)`]: {
-      width: "44px",
-      height: "44px"
-    },
-    [`@media (min-width: ${theme.mediaQueryTresholds.L}px)`]: {
-      width: "60px",
-      height: "60px"
-    },
-    "@media (hover: hover)": {
-      "&:hover": {
-        borderRadius: "75% 65%"
-      }
-    }
+    // [`@media (min-width: ${theme.mediaQueryTresholds.M}px)`]: {
+    //   width: "44px",
+    //   height: "44px"
+    // },
+    // [`@media (min-width: ${theme.mediaQueryTresholds.L}px)`]: {
+    //   width: "60px",
+    //   height: "60px"
+    // },
+    // "@media (hover: hover)": {
+    //   "&:hover": {
+    //     borderRadius: "75% 65%"
+    //   }
+    // }
   },
   title: {
     willChange: "transform, left, top",
@@ -116,18 +117,6 @@ const InfoHeader = props => {
           <img src={avatar} alt="" />
         </div>
       </Link>
-      <h1 className={classes.title}>
-        {config.infoTitle.replace(/ /g, "\u00a0")}
-        <small>{config.infoTitleNote}</small>
-      </h1>
-      <IconButton
-        aria-label="Expand the box"
-        className={classes.expand}
-        onClick={expandOnClick}
-        title="Expand the box"
-      >
-        <ExpandMoreIcon />
-      </IconButton>
     </header>
   );
 };

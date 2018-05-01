@@ -43,11 +43,11 @@ const styles = theme => ({
         top: "auto",
         "&.closed": {
           bottom: `calc(-100% + 100px + ${theme.navigator.sizes.closedHeight}px)`,
-          height: `calc(100% - 100px)`
+          height: `calc(100% - 260px)`
         },
         "&.open": {
           bottom: 0,
-          height: `calc(100% - 100px)`
+          height: `calc(100% - 260px)`
         },
         "&::after": {
           content: `""`,
