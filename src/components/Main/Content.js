@@ -21,11 +21,13 @@ const styles = theme => ({
       margin: "2em 0"
     },
     "& code.language-text": {
-      background: "#f3f3f3",
+      // background: "#f3f3f3",
+      background: "none",
       textShadow: "none",
-      color: "#333",
+      color: "#fcc",
       padding: ".1em .3em .2em",
-      borderRadius: ".1em"
+      borderRadius: ".1em",
+      fontSize: "0.9rem"
     },
     "& .gatsby-resp-image-link": {
       margin: "2em -1.5rem",
