@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import injectSheet from "react-jss";
 import FacebookProvider, { Comments } from "react-facebook";
+import Obfuscate from "react-obfuscate";
 require("core-js/fn/array/find");
 
 import config from "../../../content/meta/config";
@@ -19,6 +20,7 @@ const PostComments = props => {
 
   return (
     <div id="post-comments" className={classes.postComments}>
+    <p>You can leave comments here; if you want to give feedback, privately, please email us at <Obfuscate email="contact@qqtrend.com" /></p>
       <FacebookProvider appId={facebook}>
         <Comments
           href={`${config.siteUrl}${slug}`}
