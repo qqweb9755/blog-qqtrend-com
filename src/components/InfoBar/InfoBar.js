@@ -53,6 +53,14 @@ const styles = theme => ({
     height: "80px",
     borderRadius: 0,
     margin: "-12px 0 0 -24px"
+  },
+  link: {
+    padding: "2rem 2rem 0 0",
+    fontTransform: "lowercase",
+    color: theme.info.colors.menuLink,
+    "&:hover": {
+      color: theme.info.colors.menuLinkHover
+    }
   }
 });
 
@@ -68,11 +76,14 @@ class InfoBar extends React.Component {
         <Link to="/" className={classes.avatarLink} onClick={this.homeLinkOnClick}>
           <Avatar alt={config.infoTitle} src={avatar} className={classes.avatar} />
         </Link>
-        <TopMenu
-          pages={pages}
-          homeLinkOnClick={this.homeLinkOnClick}
-          pageLinkOnClick={this.pageLinkOnClick}
-        />
+        <div style={{float:"right"}}>
+        <Link to="/values/" className={classes.link} onClick={this.pageLinkOnClick}>
+          Company Values &amp; Vision
+        </Link>
+        <Link to="/contact/" className={classes.link} onClick={this.pageLinkOnClick}>
+          Contact
+        </Link>
+        </div>
       </aside>
     );
   }
