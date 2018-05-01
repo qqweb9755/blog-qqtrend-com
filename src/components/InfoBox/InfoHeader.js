@@ -42,7 +42,7 @@ const styles = theme => ({
   avatar: {
     width: "180px",
     height: "180px",
-    margin: "-1rem 0 0.2rem -1rem",
+    margin: "-18px 0 0px -28px",
     //borderRadius: "65% 75%",
     //border: "1px solid #ddd",
     // transition: "all .3s",
