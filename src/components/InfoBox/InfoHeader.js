@@ -15,9 +15,9 @@ const styles = theme => ({
     position: "relative"
   },
   avatarLink: {
-    willChange: "left, top",
-    float: "left",
-    display: "block",
+    // willChange: "left, top",
+    // float: "left",
+    // display: "block",
     // position: "relative",
     // margin: "0 12px 0 0",
     // [`@media (min-width: ${theme.mediaQueryTresholds.M}px)`]: {
