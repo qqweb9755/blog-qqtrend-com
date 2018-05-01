@@ -148,17 +148,16 @@ const theme = createMuiTheme({
   palette: {
     primary: {
       main: "#709425"
+    },
+    type: "dark",
+    action: {
+      hover: "rgba(0, 0, 0, 0.01)"
     }
   },
   typography: {
     fontFamily: `Arial, sans-serif`,
     fontSize: 16
   },
-  pallete: {
-    action: {
-      hover: "rgba(0, 0, 0, 0.01)"
-    }
-  }
 });
 
 export default theme;
