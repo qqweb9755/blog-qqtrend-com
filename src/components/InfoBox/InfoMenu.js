@@ -14,7 +14,6 @@ const styles = theme => ({
   },
   link: {
     padding: ".5em",
-    fontWeight: 300,
     fontTransform: "lowercase",
     color: theme.info.colors.menuLink,
     "&:hover": {
