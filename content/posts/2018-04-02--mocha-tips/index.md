@@ -4,7 +4,7 @@ subTitle: Infinite loops!
 cover: photo-1490474418585-ba9bad8fd0ea-cover.jpg
 tags: mocha, testing, js, bash
 author: darren
-category: developer
+category: "developer"
 ---
 
 Do you ever have a test fail just *sometimes*? If you are an experienced programmer, just the thought of it would have given you that drop of cold sweat, trickling down your backbone. Here is a recent example - I was altering a save function, that uses promises; changing it to do an atomic save. Simplified, my save() function started off something like this:
