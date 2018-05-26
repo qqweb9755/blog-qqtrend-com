@@ -26,7 +26,7 @@ How would it be used in machine translation? Well the latest neural machine tran
 
 The first point means it can sometimes generate gibberish, the second means if you ask it again you can get a different sentence. So you could keep requesting translations until we get below a threshold for naturalness.
 
-The final motivating example I want to mention is one that I think is easily over-looked. We can use this tool to improve the training data that we are giving to our NLP models. The bigger the data the better the models, but big data might mean a corpus of a billion words, harvested from the Internet,and written by people who didn't stop to proof-read. Our poor-overworked native speaker checker will never have time to check the whole corpus. But if our tool went through and scored them for us, it could pull just the most suspicious 1%. Or 0.1%. Any mistakes get fixed and *all* our NLP models get slightly better.
+The final motivating example I want to mention is one that I think is easily over-looked. We can use this tool to improve the training data that we are giving to our NLP models. The bigger the data the better the models, but big data might mean a corpus of a billion words, harvested from the Internet,and written by people who didn't stop to proof-read. Our poor-overworked native speaker checker will never have time to check the whole corpus. But if our tool went through and scored them for us, it could pull just the most suspicious 1%. Or 0.1%. Any mistakes get (manually) fixed and *all* our NLP models get slightly better.
 
 ## What We Need First
 
@@ -46,7 +46,7 @@ The data is of two types. Both are plain text, one example per line. The first t
 * `{My:Me:Mine} Mum said it was fine.`
 * `I {broke:breaked} {my:me:the:a} Mum's teapot.`
 
-On the one hand this is not too complicated for whoever is generating content. But on the other is is very powerful. For instance the 3rd example can be used to generate one correct sentence and seven incorrect ones. When combined with the full power of the MT templating system, it can generate hundreds.
+On the one hand this is not too complicated for whoever is generating content. But on the other is is very powerful. For instance the 3rd example can be used to generate one correct sentence and seven incorrect ones. When combined with the full power of the MT templating system, a single sentence can generate hundreds of examples.
 
 The license will be either [CC0](https://creativecommons.org/publicdomain/zero/1.0/) or [CC-BY](https://creativecommons.org/licenses/by/4.0/), the intention being that there are no restrictions on use. The only reason to prefer CC-BY over CC0 is to allow contributions from existing CC-BY corpora. This is open for discussion; initially it will be CC0. Any tools and other software will be MIT license, for the same reasons.
 
